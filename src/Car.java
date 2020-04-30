@@ -1,11 +1,11 @@
 
 class Car{
     private String model;
-  //  private String id;
+    private String id;
     
-    Car(String model){
+    Car(String model, String id){
     	setModel(model);
-   // 	setId(id);
+    	setId(id);
     }
 
 	public String getModel() {
@@ -25,15 +25,15 @@ class Car{
 		return model;
 	}
     
-//	public String getId() {
-//		return id;
-//	}
-//
-//	public void setId(String id) {
-//		if(id.trim().length() != 0) {
-//    		this.id = id;
-//    	}
-//    	else
-//    		System.err.println("ID of the car can't be empty!");
-//	}
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		if(id.trim().length() != 0) {
+    		this.id = id;
+    	}
+    	else
+   		System.err.println("ID of the car can't be empty!");
+	}
 }    
